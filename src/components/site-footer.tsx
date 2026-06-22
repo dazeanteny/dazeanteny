@@ -65,7 +65,7 @@ export function SiteFooter() {
           <p>© {new Date().getFullYear()} Daze Antony. All rights reserved.</p>
           <p className="font-serif italic text-gold">"Vision · Integrity · Innovation · Relationships"</p>
           <p className="inline-flex items-center gap-1.5">
-            Crafted with <Heart size={11} className="text-gold fill-current" /> by{" "}
+            Developed by
             <a href="https://www.instagram.com/rahulrgz" target="_blank" rel="noreferrer" className="font-medium text-navy-deep hover:text-gold underline-offset-4 hover:underline">
               Rahul
             </a>
