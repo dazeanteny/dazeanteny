@@ -65,7 +65,7 @@ function Hero() {
       <div className="relative container-x pt-32 pb-20 grid lg:grid-cols-[1.1fr_1fr] gap-14 items-center min-h-screen">
         <div className="text-navy-deep animate-fade-in">
           <p className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-gold">
-            <span className="h-px w-10 bg-gold" /> Founder · CEO · Legal Advisor
+            <span className="h-px w-10 bg-gold" /> Founder · Legal Advisor
           </p>
           <h1 className="mt-6 font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-navy-deep">
             Transforming <span className="text-gradient-gold">Legal Expertise</span> Into Global Business Success
