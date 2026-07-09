@@ -47,7 +47,7 @@ const services = [
   { icon: GraduationCap, title: "Education Consultancy", items: ["Student Guidance", "International Education", "Professional Training", "Career Development"] },
   { icon: Plane, title: "Tourism & Event Management", items: ["Travel Consultancy", "Business Events", "Corporate Events", "International Coordination"] },
   { icon: Shirt, title: "Fashion Entrepreneurship", items: ["Women's Fashion", "Designer Collections", "Accessories", "Lifestyle Products"] },
-  { icon: Lightbulb, title: "Interior Design & Lighting", items: ["Luxury Lighting Projects", "Architectural Illumination", "Interior Consultancy", "Project Management"] },
+  { icon: Lightbulb, title: "Interior Design & GM Lights", items: ["Premium Chandeliers", "LED Lighting Production", "Luxury Lighting Projects", "Guangzhou Sourcing & Export"] },
 ];
 
 function ExpertisePage() {
@@ -80,14 +80,14 @@ function ExpertisePage() {
               </p>
               <p>
                 She founded and leads <strong className="text-navy-deep">D&amp;R Goldenwings International Trading
-                Company</strong> as CEO — a platform that connects Indian and Middle Eastern enterprises with global
+                  Company</strong> as CEO — a platform that connects Indian and Middle Eastern enterprises with global
                 sourcing, partnerships and trade opportunities.
               </p>
               <p>
-                Her latest venture, <strong className="text-navy-deep">Goldenwings Lighting</strong>, focuses on
-                architectural, decorative and commercial lighting — exporting curated collections from China to
-                international markets and growing steadily through trusted distributor and dealer partnerships
-                across India and the Middle East.
+                Her latest ventures, <strong className="text-navy-deep">GM Lights</strong>, focus on
+                architectural, decorative, and commercial lighting — manufacturing and exporting curated collections
+                (including premium chandeliers and LED lights) from Guangzhou, China to international markets and growing
+                steadily through trusted distributor and dealer partnerships across India and the Middle East.
               </p>
             </div>
           </div>

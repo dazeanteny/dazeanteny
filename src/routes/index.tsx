@@ -43,6 +43,7 @@ function Index() {
     <>
       <Hero />
       <AboutPreview />
+      <FeaturedVenture />
       <ExpertiseGrid />
       <Stats />
       <ReelsStrip />
@@ -159,6 +160,72 @@ function AboutPreview() {
   );
 }
 
+function FeaturedVenture() {
+  return (
+    <section className="section-pad bg-background relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 -right-40 h-[400px] w-[400px] rounded-full bg-gold/5 blur-3xl" />
+        <div className="absolute bottom-0 left-10 h-[300px] w-[300px] rounded-full bg-navy-deep/5 blur-3xl" />
+      </div>
+
+      <div className="container-x relative">
+        <div className="relative overflow-hidden rounded-[2rem] border border-gold/35 bg-card shadow-[var(--shadow-luxe)] p-8 md:p-12">
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 h-32 w-32 bg-gold/10 rounded-bl-[100%] pointer-events-none" />
+          <div className="absolute bottom-6 right-6 border border-gold/20 text-[100px] font-serif text-gold/5 leading-none select-none pointer-events-none">GM</div>
+
+          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-14 items-center">
+            <div>
+              <span className="inline-flex items-center gap-2 rounded-full bg-gold/10 border border-gold/30 px-3.5 py-1.5 text-xs font-semibold text-gold tracking-wide uppercase">
+                <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" /> New Guangzhou Venture
+              </span>
+              <h2 className="mt-5 font-serif text-3xl md:text-4xl text-navy-deep leading-tight">
+                Introducing <span className="text-gradient-gold">GM Lights</span>
+              </h2>
+              <p className="mt-4 text-muted-foreground leading-relaxed text-sm md:text-base">
+                Established as a premium lighting and manufacturing hub in Guangzhou, China,
+                <strong> GM Lights</strong> specializes in the production and export of high-end chandeliers,
+                bespoke decorative fixtures, and state-of-the-art LED lighting solutions.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2.5">
+                {["Luxury Chandeliers", "Custom LED Lighting", "Architectural Illumination", "Global Export Hub"].map((tag) => (
+                  <span key={tag} className="text-xs bg-muted border border-border text-navy-deep/80 rounded-full px-3.5 py-1.5">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-navy-deep to-navy/90 rounded-2xl p-6 md:p-8 text-white relative overflow-hidden shadow-inner border border-white/5">
+              <div className="absolute top-4 right-4 text-gold/30">
+                <Lightbulb size={40} className="stroke-[1.25]" />
+              </div>
+              <h3 className="font-serif text-xl md:text-2xl text-gold">Production & Sourcing Excellence</h3>
+              <p className="mt-3 text-sm text-white/70 leading-relaxed">
+                Combining global design sensibilities with Guangzhou's robust manufacturing ecosystem to deliver bespoke lighting solutions for residential, commercial, and hospitality projects worldwide.
+              </p>
+              <ul className="mt-6 space-y-2.5 text-xs md:text-sm text-white/80">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  <strong>Premium Chandeliers:</strong> Classic, modern, and bespoke luxury collections.
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  <strong>LED Systems:</strong> High-efficiency commercial and residential LED solutions.
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                  <strong>Global Logistics:</strong> Seamless export operations direct from China to international markets.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 const expertise = [
   { icon: Scale, title: "Corporate Legal Advisory", desc: "Compliance, governance, contracts and strategic legal planning." },
   { icon: Globe2, title: "International Trade", desc: "Import & export, China partnerships and cross-border development." },
@@ -167,7 +234,7 @@ const expertise = [
   { icon: GraduationCap, title: "Education Consultancy", desc: "International education, training and career development." },
   { icon: Plane, title: "Tourism & Events", desc: "Corporate events, business travel and international coordination." },
   { icon: Shirt, title: "Fashion Entrepreneurship", desc: "Women's fashion, designer collections and lifestyle products." },
-  { icon: Lightbulb, title: "Interior & Lighting", desc: "Luxury lighting projects, illumination and interior consultancy." },
+  { icon: Lightbulb, title: "Interior & GM Lights", desc: "Production of chandeliers, LED lights, and custom illumination projects via GM Lights in Guangzhou." },
 ];
 
 function ExpertiseGrid() {

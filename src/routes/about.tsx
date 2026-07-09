@@ -24,7 +24,7 @@ const timeline = [
   { year: "Entrepreneurship", title: "Fashion Boutique", desc: "Founded a women's fashion and lifestyle venture, blending design sensibility with business acumen." },
   { year: "Global Expansion", title: "China Operations", desc: "Built sourcing, supplier and manufacturing networks across China for Indian and Middle Eastern clients." },
   { year: "Today", title: "D&R Goldenwings International", desc: "CEO of an international trading company connecting markets, partners and opportunities across borders." },
-  { year: "Now Scaling", title: "Goldenwings Lighting", desc: "Launched a dedicated lighting venture exporting architectural, decorative and commercial lighting collections to international markets." },
+  { year: "Now Scaling", title: "GM Lights", desc: "Launched premium lighting ventures exporting collections globally, including GM Lights in Guangzhou specializing in chandeliers and LED solutions." },
   { year: "Ongoing", title: "Multidisciplinary Leadership", desc: "Advisory across legal, trade, education, tourism, interiors and corporate strategy." },
 ];
 
@@ -148,23 +148,21 @@ function AboutPage() {
               </a>
             </article>
 
-            {/* Goldenwings Lighting */}
+            {/* GM Lights */}
             <article className="rounded-3xl p-8 md:p-10 text-white shadow-[var(--shadow-luxe)]" style={{ background: "var(--gradient-navy)" }}>
               <p className="text-[10px] uppercase tracking-[0.25em] text-gold">New Venture · Now Scaling</p>
               <h3 className="mt-3 font-serif text-2xl md:text-3xl text-white leading-tight">
-                Goldenwings Lighting
+                GM Lights
               </h3>
               <p className="mt-5 text-sm md:text-base text-white/80 leading-relaxed">
-                A dedicated lighting venture focused on architectural, decorative and commercial
-                illumination — exporting curated collections from China to international markets and
-                growing steadily through trusted distributor partnerships across India and the Middle East.
+                A dedicated lighting venture focused on architectural, decorative and commercial illumination. Our newest branch, <strong>GM Lights</strong> in Guangzhou, China, specializes in the production and export of high-end chandeliers and state-of-the-art LED lighting solutions.
               </p>
               <ul className="mt-6 grid sm:grid-cols-2 gap-2.5 text-sm text-white/85">
                 {[
-                  "Architectural lighting",
-                  "Decorative & designer lighting",
-                  "Commercial & hospitality lighting",
-                  "Custom OEM manufacturing",
+                  "Luxury chandeliers & custom designs",
+                  "High-efficiency LED lighting",
+                  "Architectural & decorative illumination",
+                  "Guangzhou manufacturing & sourcing",
                   "Distributor & dealer partnerships",
                   "End-to-end export logistics",
                 ].map((i) => (
